@@ -1,8 +1,6 @@
-# Pre-Entrega 2: API RESTFUL - Gestión de Pozos Petroleros
+# Pre-Entrega 2: Gestión de Pozos Petroleros
 
 ## 📑 Sumario
-- [Pre-Entrega 2: API RESTFUL - Gestión de Pozos Petroleros](#pre-entrega-2-api-restful---gestión-de-pozos-petroleros)
-  - [📑 Sumario](#-sumario)
   - [🛠️ Librerías y Dependencias](#️-librerías-y-dependencias)
   - [⚙️ Configuración y Ejecución Local](#️-configuración-y-ejecución-local)
   - [📋 Endpoints de la API (CRUD)](#-endpoints-de-la-api-crud)
