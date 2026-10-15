@@ -5,8 +5,8 @@
   - [⚙️ Configuración y Ejecución Local](#️-configuración-y-ejecución-local)
   - [📋 Endpoints del CRUD](#-endpoints-del-crud)
   - [💡 Ejemplos de Estructuras de Datos](#-ejemplos-de-estructuras-de-datos)
-    - [Ejemplo 1: Estructura para registrar un nuevo pozo (`POST`)](#ejemplo-1-estructura-para-registrar-un-nuevo-pozo-post)
-    - [Ejemplo 2: Estructura para modificar un pozo existente (`PUT`)](#ejemplo-2-estructura-para-modificar-un-pozo-existente-put)
+    - [Ejemplo 1: Estructura para registrar un nuevo pozo (`POST`)](#ejemplo-1-registrar-un-nuevo-pozo-post)
+    - [Ejemplo 2: Estructura para modificar un pozo existente (`PUT`)](#ejemplo-2-modificar-un-pozo-existente-put)
 
 
 ## 🛠️ Librerías y Dependencias
