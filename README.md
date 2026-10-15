@@ -38,22 +38,20 @@ nodemon
 ```
 
 
-## 📋 Endpoints de la API (CRUD)
-
-La API cuenta con las siguientes rutas:
+## 📋 Endpoints del CRUD
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
 | **GET** | `/pozos` | Devuelve un listado con todos los pozos petroleros registrados. |
 | **GET** | `/pozos/:id` | Busca y devuelve un pozo específico utilizando su ID. |
-| **POST** | `/pozos` | crea un nuevo pozo a partir de los datos enviados en el body en formato JSON. |
+| **POST** | `/pozos` | Crea un nuevo pozo a partir de los datos enviados en el body en formato JSON. |
 | **PUT** | `/pozos/:id` | Modifica los datos de un pozo existente buscando por su ID. |
 | **DELETE** | `/pozos/:id` | Elimina un pozo utilizando su ID. |
 
 
 ## 💡 Ejemplos de Estructuras de Datos
 
-### Ejemplo 1: Estructura para registrar un nuevo pozo (`POST`)
+### Ejemplo 1: Registrar un nuevo pozo (`POST`)
 
 ```json
 {
@@ -67,7 +65,7 @@ La API cuenta con las siguientes rutas:
 }
 ```
 
-### Ejemplo 2: Estructura para modificar un pozo existente (`PUT`)
+### Ejemplo 2: Modificar un pozo existente (`PUT`)
 
 ```json
 {
