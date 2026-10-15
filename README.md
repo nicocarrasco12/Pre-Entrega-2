@@ -3,7 +3,7 @@
 ## 📑 Sumario
   - [🛠️ Librerías y Dependencias](#️-librerías-y-dependencias)
   - [⚙️ Configuración y Ejecución Local](#️-configuración-y-ejecución-local)
-  - [📋 Endpoints de la API (CRUD)](#-endpoints-de-la-api-crud)
+  - [📋 Endpoints del CRUD](#-endpoints-del-crud)
   - [💡 Ejemplos de Estructuras de Datos](#-ejemplos-de-estructuras-de-datos)
     - [Ejemplo 1: Estructura para registrar un nuevo pozo (`POST`)](#ejemplo-1-estructura-para-registrar-un-nuevo-pozo-post)
     - [Ejemplo 2: Estructura para modificar un pozo existente (`PUT`)](#ejemplo-2-estructura-para-modificar-un-pozo-existente-put)
