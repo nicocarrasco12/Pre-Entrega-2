@@ -20,19 +20,21 @@
 
 
 ## ⚙️ Configuración y Ejecución Local
-1. Clonar el repositorio en tu computadora.
-2. Instalar las dependencias del proyecto ejecutando en la terminal:
+1. Crear una cuenta en **MongoDB Atlas** y crear un nuevo proyecto.
+2. Descargar **MongoDB Compass** y vincularlo a **Atlas** mediante tu URI.
+3. Clonar el repositorio en tu computadora.
+4. Instalar las dependencias del proyecto ejecutando en la terminal:
 ```bash
    npm install
 ```
 
-3. Crear un archivo llamado `.env` en la raíz del proyecto y configurar las variables de entorno de la siguiente manera:
+1. Crear un archivo llamado `.env` en la raíz del proyecto y configurar las variables de entorno de la siguiente manera:
 ```env
 PORT=3008
 MONGODB_URISTRING=tu_URI_atlas
 ```
 
-4. Iniciar el servidor mediante nodemon:
+1. Iniciar el servidor mediante nodemon:
 ```bash
 nodemon
 ```
