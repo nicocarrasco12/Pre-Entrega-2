@@ -4,7 +4,7 @@
     "codigo": "POZO-NQN-01",
     "ubicacion": "Loma Campana, Neuquén",
     "estado": "Activo 🟢",
-    "fechaPuestaProduccion": "2022-04-15",
+    "fechaPuestaProduccion": "15-04-2022",
     "profundidadMetros": 3200,
     "produccionDiariaBarriles": 450
   },
@@ -13,7 +13,7 @@
     "codigo": "POZO-NQN-02",
     "ubicacion": "Bajada del Palo, Neuquén",
     "estado": "En mantenimiento 🟡",
-    "fechaPuestaProduccion": "2021-09-20",
+    "fechaPuestaProduccion": "20-09-2021",
     "profundidadMetros": 2850,
     "produccionDiariaBarriles": 0
   },
@@ -22,7 +22,7 @@
     "codigo": "POZO-NQN-03",
     "ubicacion": "Añelo Norte, Neuquén",
     "estado": "Activo 🟢",
-    "fechaPuestaProduccion": "2023-01-10",
+    "fechaPuestaProduccion": "10-01-2023",
     "profundidadMetros": 3500,
     "produccionDiariaBarriles": 620
   },
@@ -31,7 +31,7 @@
     "codigo": "POZO-NQN-04",
     "ubicacion": "Rincón de los Sauces, Neuquén",
     "estado": "Cerrado 🔴",
-    "fechaPuestaProduccion": "2018-11-05",
+    "fechaPuestaProduccion": "05-11-2018",
     "profundidadMetros": 2400,
     "produccionDiariaBarriles": 0
   }
