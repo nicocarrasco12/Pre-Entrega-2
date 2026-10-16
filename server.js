@@ -16,7 +16,7 @@ async function connectToMongoDB() {
        return client;
   }
   catch (error) {
-    console.error('Error al conectar con MongoDB:', error);
+    console.error('Error al conectar con MongoDB', error);
        return null;
   }
 }
@@ -54,13 +54,13 @@ app.get('/pozos/:id', async (req, res) => {
     const collection = client.db('PozosPetroleros').collection('Pozos');
     const pozo = await collection.findOne({ id });
        if (!pozo) {
-         return res.status(404).send('Pozo no encontrado.');
+         return res.status(404).send('Pozo no encontrado');
     }
     res.status(200).json(pozo);
   }
   catch (error) {
     console.error(error);
-       res.status(500).send('Error en el servidor.');
+       res.status(500).send('Error en el servidor');
   }
   finally {
     await client.close();
@@ -69,9 +69,8 @@ app.get('/pozos/:id', async (req, res) => {
 
 app.post('/pozos', async (req, res) => {
   const nuevoPozo = req.body;
-
      if (nuevoPozo === undefined) {
-        return res.status(400).send('Error en el formato de datos a crear.');
+        return res.status(400).send('Error en el formato de datos a crear');
      }
 
   const client = await connectToMongoDB();
@@ -83,15 +82,15 @@ app.post('/pozos', async (req, res) => {
     const collection = client.db('PozosPetroleros').collection('Pozos');
     const existente = await collection.findOne({ id: nuevoPozo.id });
        if (existente) {
-         return res.status(409).send('Ya existe un pozo con ese id.');
+         return res.status(409).send('Ya existe un pozo con ese id');
     }
     await collection.insertOne(nuevoPozo);
-    console.log('Nuevo pozo creado.');
+    console.log('Nuevo pozo creado');
        res.status(201).json(nuevoPozo);
   }
   catch (error) {
     console.error(error);
-       res.status(500).send('Error al crear el pozo.');
+       res.status(500).send('Error al crear el pozo');
   }
   finally {
     await client.close();
@@ -101,15 +100,15 @@ app.post('/pozos', async (req, res) => {
 app.put('/pozos/:id', async (req, res) => {
   const id = parseInt(req.params.id);
      if (isNaN(id)) {
-       return res.status(400).send('El ID debe ser un número entero.');
+       return res.status(400).send('El ID debe ser un número entero');
   }
 
   const nuevosDatos = req.body;
      if (!nuevosDatos) {
-       return res.status(400).send('Error en el formato de datos recibido.');
+       return res.status(400).send('Error en el formato de datos recibido');
      }
   
-  delete nuevosDatos._id; // Como MongoDB no permite modifica el _id si lo incluimos en el body nos va a rechazar
+  delete nuevosDatos._id; // Como MongoDB no permite modificar el _id si lo incluimos en el body nos va a rechazar.
   delete nuevosDatos.id; // Como la URL busca por ID, si intentamos modificarla vamos a crear un conflicto.
 
   const client = await connectToMongoDB();
@@ -121,14 +120,14 @@ app.put('/pozos/:id', async (req, res) => {
     const collection = client.db('PozosPetroleros').collection('Pozos');
     const resultado = await collection.updateOne({ id }, { $set: nuevosDatos });
        if (resultado.matchedCount === 0) {
-         return res.status(404).send('No se encontró el pozo con el ID proporcionado.');
+         return res.status(404).send('No se encontró el pozo con el ID proporcionado');
     }
     console.log('Pozo modificado.');
        res.status(200).json(nuevosDatos);
   }
   catch (error) {
     console.error(error);
-       res.status(500).send('Error al modificar el pozo.');
+       res.status(500).send('Error al modificar el pozo');
   }
   finally {
     await client.close();
