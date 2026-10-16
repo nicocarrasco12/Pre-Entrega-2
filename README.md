@@ -1,15 +1,15 @@
 # Pre-Entrega 2: Gestión de Pozos Petroleros
 
-## 📑 Sumario
-  - [🛠️ Librerías y Dependencias](#️-librerías-y-dependencias)
-  - [⚙️ Configuración y Ejecución Local](#️-configuración-y-ejecución-local)
-  - [📋 Endpoints del CRUD](#-endpoints-del-crud)
-  - [💡 Ejemplos de Estructuras de Datos](#-ejemplos-de-estructuras-de-datos)
+##  Sumario
+  - [Librerías y Dependencias](#️-librerías-y-dependencias)
+  - [Configuración y Ejecución Local](#️-configuración-y-ejecución-local)
+  - [Endpoints del CRUD](#-endpoints-del-crud)
+  - [Ejemplos de Estructuras de Datos](#-ejemplos-de-estructuras-de-datos)
     - [Ejemplo 1: Registrar un nuevo pozo (`POST`)](#ejemplo-1-registrar-un-nuevo-pozo-post)
     - [Ejemplo 2: Modificar un pozo existente (`PUT`)](#ejemplo-2-modificar-un-pozo-existente-put)
 
 
-## 🛠️ Librerías y Dependencias
+## Librerías y Dependencias
 - **Node.js**
 - **Express**
 - **MongoDB**
@@ -17,7 +17,7 @@
 - **Nodemon**
 
 
-## ⚙️ Configuración y Ejecución Local
+## Configuración y Ejecución Local
 1. Crear una cuenta en **MongoDB Atlas** y crear un nuevo proyecto.
 2. Descargar **MongoDB Compass** y vincularlo a **Atlas** mediante tu URI.
 3. Clonar el repositorio en tu computadora.
@@ -38,7 +38,7 @@ nodemon
 ```
 
 
-## 📋 Endpoints del CRUD
+## Endpoints del CRUD
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ nodemon
 | **DELETE** | `/pozos/:id` | Elimina un pozo utilizando su ID. |
 
 
-## 💡 Ejemplos de Estructuras de Datos
+## Ejemplos de Estructuras de Datos
 
 ### Ejemplo 1: Registrar un nuevo pozo (`POST`)
 
